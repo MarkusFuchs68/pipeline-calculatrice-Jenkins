@@ -46,5 +46,11 @@ pipeline {
                 }
             }
         }
+        stage('Branch') {
+            agent any
+            steps {
+                echo 'demo_branch_for_jenkins'
+            }
+        }
     }
 }
